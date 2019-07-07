@@ -1,0 +1,298 @@
+<html>
+	<head>
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     
+     	 <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<style type="text/css">
+			
+			#name,#mail,#textarea1{
+			    border: 1px solid;
+			   	color:  #c47226 ;
+			    border-color:white;
+			    border-radius: 1px;
+			    placeholder-color:black;
+				
+			}
+			.input-field input[type=text]:focus {
+		    	border-bottom: 1px solid #fff;
+		    	box-shadow: 0 1px 0 0 #fff;
+		   	}
+			#name:focus,#mail:focus,#textarea1:focus{
+				border-color:#c47226;
+				box-shadow: 0 2px 0 0 #c3752c;
+				color:#fff !important;
+				
+			}
+			input::-webkit-input-placeholder {
+				color: #c47226 !important;
+			}
+			textarea::-webkit-input-placeholder {
+				color: #c47226 !important;
+			}
+			textarea.materialize-textarea{
+				height: 6rem;
+				position: absolute;
+			}
+			.card .card-action{
+				padding-top: 8px;
+				padding-bottom: 8px;
+			}
+			.parallax-container.container-2 {
+				height: 150px;
+			}
+	
+			.bold-color-amber{
+				color:#c47226;
+				font-weight:bolder
+
+			}
+			.input-field input[type=text]:focus {
+			    border-bottom: 1px solid #fff !important;
+			    box-shadow: 0 1px 0 0 #fff !important;
+			}
+						
+			
+		</style>
+	</head>
+	<body>
+
+
+		<header>
+			<nav style="background-color:#393e41" class=" nav-extended">
+		 	   <div class="nav-wrapper">
+		 	   			<img style="height: 65px;" src="images/logo.jpg">
+				      <a href="#" class="brand-logo">  </a>
+				      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+				      <ul id="nav-mobile" class="right hide-on-med-and-down">
+				      	<li><a class=" waves-effect " id="user-name" href="#!"></a></li>
+				        <li><a class=" waves-effect " id="signup-button" href="#!">SignUp</a></li>
+				        <li><a class="modal-trigger waves-effect" id="login-button" href="#modal1">Login</a></li>
+
+				        <!-- start of modal 	-->
+
+
+						
+
+
+				        <!-- login end -->
+
+				        <!-- end oof modal -->
+				        <li><a href="#!">Cart<span>  </span><span id="qty">0</span><i class="material-icons right">shopping_cart
+</i></a></li>
+				      </ul>
+				      <ul class="side-nav" id="mobile-demo">
+				        <li><a href="#!">SignUp</a></li>
+				        <li><a href="#!">Login</a></li>
+				        <li><a href="#!">Cart</a></li>
+				      </ul>
+				    </div>
+				    <div class="nav-content row" style="margin-bottom:0px;height:40px;">
+						<ul class="tabs-transparent">			    
+						<li class="">
+							<a style="color:#c47226;font-weight:bolder" class="materialize-pink btn-flat dropdown-button bold-color-amber" data-activates="list1">Fiction</a>
+
+
+							<ul class="dropdown-content" id="list1">
+								<li><a class="grey-text text-darken-3" href="bookpage_1.html">Harry Potter</a></li>
+								<li class="divider"></li>
+								<li><a class="grey-text text-darken-3" href="#!">Lord Of The Rings</a></li>
+								
+								<li><a class="grey-text text-darken-3" href="#!">Hobbit</a></li>
+							</ul>
+						</li>
+						<li class="">
+							<a class=" materialize-pink  btn-flat dropdown-button bold-color-amber" data-activates="list2">Motivating</a>
+
+
+							<ul class="dropdown-content" id="list2">
+								<li><a class="grey-text text-darken-3" href="#!">You Can.</a></li>
+								
+								<li><a class="grey-text text-darken-3" href="#!">Guide To Greatness</a></li>
+								
+								<li><a class="grey-text text-darken-3" href="#!">Possible!</a></li>
+							</ul>
+						</li>
+						<li class="">
+							<a class="materialize-pink bold-color-amber btn-flat dropdown-button" data-activates="list3">Romantic</a>
+
+
+							<ul class="dropdown-content" id="list3">
+								<li><a class="grey-text text-darken-3" href="#!">Book Of Love</a></li>
+								
+								<li><a class="grey-text text-darken-3" href="#!">Beauty and Beast</a></li>
+								
+								<li><a class="grey-text text-darken-3" href="#!">Lala land</a></li>
+							</ul>
+						</li>
+						</ul>
+				      
+			    </div>
+			</nav>
+
+			
+		</header>
+		<main>
+			<br><br>
+			<div class="row" >
+				<div class="col s3">
+					
+					<img height="300px" src="images/secret.png">
+				</div>
+				<div class="col s7">
+					<span style="font-weight:bolder;font-size:20px;">
+						The Secret (2010)
+					</span>
+					<br><br>
+					<span>
+						<b>Author: Robin Sharma</b><br><br>
+						Robin Sharma's inspirational book collects his best quotes from The Monk Who Sold His Ferrari and other writings, helping you to look at life's larger picture.<br><br>
+						In the book The Power of Your Subconscious Mind, the author writes about the beliefs and notions that case an influence on our subconscious minds. Structured in twenty chapters, each one spells out instructions that one needs to follow in order to be content and successful in life.
+					</span><br><br>
+					<a  style="background-color:#393e41" id="add-qty" class="btn #393e41 waves-effect" >Buy Now</a>
+				</div>
+			</div>
+		</main>
+		
+		<br><br><br>
+		<footer class="card-panel teal lighten-3" style="margin-top: 0px;background-color: #393e41 !important">
+		    			<div id="chip-contain">
+		    				
+			    			<span style="color:d97c27;">Latest Picks :</span>
+							
+							<span class="chip">
+							   <a class="grey-text text-darken-2 book-check-login" href="bookpage_1.html">The Secret</a>
+							    <i class="close material-icons">close</i>
+							</span>
+							<span class="chip">
+							    Game Of Thrones
+							    <i class="close material-icons">close</i>
+							</span>
+							<span class="chip">
+							    Hobbit
+							    <i class="close material-icons">close</i>
+							</span>
+							<span class="chip">
+							    Two States
+							    <i class="close material-icons">close</i>
+							</span>
+							<span class="chip">
+							    See you at the top
+							    <i class="close material-icons">close</i>
+							</span>
+							<span class="chip">
+							    The monk who sold his Ferari
+							    <i class="close material-icons">close</i>
+							</span>
+							<span class="chip">
+							    Wealth
+							    <i class="close material-icons">close</i>
+							</span>
+							<span class="chip">
+							    NaMo India
+							    <i class="close material-icons">close</i>
+							</span>
+							<span class="chip">
+							    The Secret
+							    <i class="close material-icons">close</i>
+							</span>
+						</div>
+						<div class="row"></div>
+						<div class=" row divider"></div>
+
+						<div class="">
+							<!-- //asd -->
+
+							<div class="row">
+								<form class="col s12">
+								  	<div class="row">
+								  		<div style="    padding-left: 1px;" class="input-field col s6">
+								  			<div class="input-field">
+								  				
+									  			<input class="" type="text" placeholder="Name" id="name">
+									  			<label for="name"></label>
+								  				
+								  			</div>
+											<div class="input-field">
+									  			<input type="email" placeholder="Email id" id="mail">
+									  			
+									  		</div>
+								  		</div>
+								    	<div class="input-field col s6">
+									      	<div class="row">
+ 
+
+										        <div class="input-field col s12">
+										          	<textarea style="height:95px;color:#c47226" id="textarea1" placeholder="Your Comments" noresize class="materialize-textarea"></textarea>
+										          
+										        </div>
+										   
+										  	</div>
+
+								    	</div>
+								 	</div>
+								 	<div class="row">
+								 		 <a  style="color: rgb(197, 116, 41); background-color: rgba(242, 202, 167, 0.16);" class=" col s12 waves-effect waves btn">Contact Us</a>
+								 	</div>
+								</form>
+							</div>
+							
+							<!-- as -->
+						</div>
+
+		    			<div style="color:#d67b27" class="center-align">Copyrights © 2014 -17 All Rights Reserved.</div>
+		    		</footer>
+
+		
+
+
+
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+ 	    <script type="text/javascript" src="js/materialize.js"></script>
+ 	    <script type="text/javascript">
+
+ 	    	$(document).ready(function(){
+ 	    		var item = 0;
+		      	$('.parallax').parallax();
+		      	$("#add-qty").click(function(){
+		      		
+		      		item = item+1;
+		      		$("#qty").text(item);
+		      	});
+		      	
+		      	 $('.dropdown-button').dropdown({
+					  inDuration: 300,
+					  outDuration: 225,
+					  constrainWidth: false,
+					  hover: true, // Activate on hover
+					  gutter: 0, // Spacing from edge
+					  belowOrigin: false, // Displays dropdown below the button
+					  alignment: 'left', // Displays dropdown with edge aligned to the left of button
+					  stopPropagation: false // Stops event propagation
+				});
+		      	 $('.modal').modal();
+		      	 $("#login-button").hide();
+					$("#signup-button").hide();
+					$("#user-name").text("Welcome, " + getCookie("logged"));
+
+		      			      	
+		    });
+		    function getCookie(cname) {
+			var name = cname + "=";
+			var ca = document.cookie.split(';');
+			for(var i = 0; i < ca.length; i++) {
+			    var c = ca[i];
+			    while (c.charAt(0) == ' ') {
+			        c = c.substring(1);
+			    }
+			    if (c.indexOf(name) == 0) {
+			        return c.substring(name.length, c.length);
+			    }
+			}
+			return "";
+			}
+ 	    </script>
+	</body>
+</html>
